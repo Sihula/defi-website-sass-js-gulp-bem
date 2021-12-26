@@ -1,0 +1,98 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header {
+  margin-bottom: 200px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 44px;
+    align-items: center;
+    padding-bottom: 88px;
+
+  }
+
+  &__inner-social {
+    display: flex;
+  }
+
+  &__social-link {
+    margin-left: 25px;
+  }
+
+  &__content {
+    display: flex;
+
+  }
+
+  &__content-desc {
+    max-width: 615px;
+    flex: 1 1 50%;
+    margin-right: 30px;
+  }
+
+  &__desc-title {
+    font-size: 65px;
+    line-height: 90px;
+    font-family: 'Fredoka One',
+      cursive;
+    margin: 0 0 50px;
+
+  }
+
+  &__desc-subtitle {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    max-width: 594px;
+  }
+
+  &__desc-text {
+    font-size: 24px;
+    line-height: 35px;
+    max-width: 594px;
+    margin-bottom: 75px;
+  }
+
+
+}
+
+
+.menu {
+  &__link {
+    margin-right: 50px;
+  }
+}
+
+.main {
+  &__btn {
+
+    background: linear-gradient(180deg, #FF0087 0%, #761594 100%);
+    border-radius: 10px;
+    padding: 23px 78px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  &__btn-header {}
+}
+
+.cards {
+  transform: rotate(4deg);
+  margin-bottom: 163px;
+  overflow: hidden;
+
+  &__slider {
+    .slick-list {
+      max-width: 1920px;
+      margin: 0 auto;
+    }
+  }
+
+  &__slider-item {}
+}
