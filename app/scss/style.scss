@@ -79,7 +79,6 @@
     font-weight: 700;
   }
 
-  &__btn-header {}
 }
 
 .cards {
@@ -94,5 +93,110 @@
     }
   }
 
-  &__slider-item {}
+}
+
+.overview {
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    margin-bottom: 200px;
+  }
+
+  &__inner-box {
+    max-width: 366px;
+    margin-bottom: 60px;
+  }
+
+  &__inner-box-title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'Fredoka One',
+      cursive;
+    margin-bottom: 20px;
+  }
+
+  &__box-list {
+    list-style: disc !important;
+  }
+
+
+}
+
+
+.title-glob {
+  font-size: 70px;
+  line-height: 90px;
+  font-family: 'Fredoka One',
+    cursive;
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 85px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/title-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 200px;
+    left: 225px;
+    top: -45px;
+    z-index: -1;
+  }
+}
+
+.invite {
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'Fredoka One',
+      cursive;
+    text-align: center;
+    margin-left: 250px;
+    margin-bottom: 45px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  &__inner-num {
+    max-width: 211px;
+    text-align: center;
+  }
+
+  &__inner-number {
+    font-size: 70px;
+    line-height: 90px;
+    font-family: 'Fredoka One',
+      cursive;
+  }
+
+  &__inner-subtitle--1 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 100px;
+  }
+
+  &__inner-descr {
+    max-width: 490px;
+  }
+
+  &__descr-text {
+    margin-bottom: 73px;
+  }
 }
