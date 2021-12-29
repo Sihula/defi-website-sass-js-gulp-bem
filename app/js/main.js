@@ -15,3 +15,13 @@ $(function () {
 // hamburger.addEventListener('click', () => {
 //   navLink.classList.toggle('active');
 // });
+
+
+
+let accordions = document.querySelectorAll('.faqs__content-container .accordion');
+
+accordions.forEach(acco => {
+  acco.onclick = () => {
+    acco.classList.toggle('active');
+  }
+});

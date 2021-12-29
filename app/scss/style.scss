@@ -171,6 +171,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 300px;
   }
 
 
@@ -198,5 +199,144 @@
 
   &__descr-text {
     margin-bottom: 73px;
+  }
+}
+
+.roadmap {
+  margin-bottom: 200px;
+
+  &__title {
+    margin-bottom: 85px;
+  }
+
+  &__inner-item-1 {
+    margin-bottom: 50px;
+    max-width: 574px;
+    padding-left: 15px;
+  }
+
+  &__inner-item-2 {
+    margin-bottom: 50px;
+    max-width: 574px;
+    margin-left: auto;
+    padding-left: 15px;
+  }
+
+  &__item-title {
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'Fredoka One',
+      cursive;
+    margin-bottom: 20px;
+
+  }
+
+  &__item-list {
+    list-style: disc !important;
+  }
+
+
+}
+
+.team {
+  margin-bottom: 120px;
+
+  &__inner-row {
+    display: flex;
+    column-gap: 100px;
+    justify-content: center;
+  }
+
+  &__row-item {
+    text-align: center;
+  }
+
+  &__item-img {
+    margin-bottom: 40px;
+  }
+
+  &__item-title {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+  }
+
+  &__item-subtitle {
+    margin-bottom: 100px;
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.faqs {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__inner-image {}
+
+  &__inner-content {
+    padding-top: 80px;
+    max-width: 802px;
+    width: 100%;
+  }
+
+  &__title {
+    text-align: left;
+
+    &::after {
+      left: -200px;
+    }
+  }
+
+  &__content-container {}
+}
+
+
+.accordion {
+
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #712F76;
+    border-bottom: 1px solid #712F76;
+    padding: 33px 0;
+    cursor: pointer;
+
+    h5 {
+      font-size: 24px;
+      line-height: 35px;
+    }
+
+    .img {
+      margin: 0 40px;
+      width: 30px;
+      height: 30px;
+      background-image: url(../images/plus.png);
+      background-position: center;
+    }
+
+
+  }
+
+  &__content {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 40px 0 40px 200px;
+    display: none;
+  }
+}
+
+.accordion.active {
+  .accordion__content {
+    display: block;
+  }
+
+  .img {
+    background-image: url(../images/minus.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
