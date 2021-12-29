@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  transition: all .3s;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   font-size: 18px;
   line-height: 28px;
   overflow-x: hidden;
-  transition: all .3s;
+
 }
 
 

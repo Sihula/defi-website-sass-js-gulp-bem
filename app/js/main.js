@@ -25,3 +25,11 @@ accordions.forEach(acco => {
     acco.classList.toggle('active');
   }
 });
+
+let arrow = document.querySelectorAll('.litepaper__inner .litepaper__inner-item');
+
+arrow.forEach(acco => {
+  acco.onclick = () => {
+    acco.classList.toggle('show');
+  }
+});
