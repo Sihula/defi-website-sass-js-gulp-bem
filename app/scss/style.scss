@@ -3,6 +3,33 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+.burger {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+  &__line1 {
+    height: 4px;
+    background: #000;
+  }
+
+  &__line2 {
+    height: 4px;
+    background: #000;
+    margin: 8px 0;
+  }
+
+  &__line3 {
+    height: 4px;
+    background: #000;
+  }
+}
+
+
+
 
 .header {
   margin-bottom: 200px;
@@ -434,12 +461,5 @@
   }
 }
 
-.menu {
-  &__link {}
-}
 
-.header {
-  &__inner-social {}
-
-  &__social-link {}
-}
+@import 'media';

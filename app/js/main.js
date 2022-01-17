@@ -1,35 +1,37 @@
 $(function () {
-  $('.cards__slider').slick({
+  $(".cards__slider").slick({
     centerMode: true,
-    centerPadding: '360px',
+    centerPadding: "360px",
     slidesToShow: 3,
     arrows: false,
     dots: false,
-    autoplay: true
+    autoplay: true,
   });
-
-});
-// const hamburger = document.querySelector('.burger');
-// const navLink = document.querySelector('.menu');
-
-// hamburger.addEventListener('click', () => {
-//   navLink.classList.toggle('active');
-// });
-
-
-
-let accordions = document.querySelectorAll('.faqs__content-container .accordion');
-
-accordions.forEach(acco => {
-  acco.onclick = () => {
-    acco.classList.toggle('active');
-  }
 });
 
-let arrow = document.querySelectorAll('.litepaper__inner .litepaper__inner-item');
+let accordions = document.querySelectorAll(
+  ".faqs__content-container .accordion"
+);
 
-arrow.forEach(acco => {
+accordions.forEach((acco) => {
   acco.onclick = () => {
-    acco.classList.toggle('show');
-  }
+    acco.classList.toggle("active");
+  };
+});
+
+let arrow = document.querySelectorAll(
+  ".litepaper__inner .litepaper__inner-item"
+);
+
+arrow.forEach((acco) => {
+  acco.onclick = () => {
+    acco.classList.toggle("show");
+  };
+});
+
+const burger = document.querySelector(".burger");
+const menu = document.querySelector(".header__inner");
+
+burger.addEventListener("click", () => {
+  menu.classList.toggle("active");
 });
